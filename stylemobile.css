@@ -450,5 +450,5 @@
   transition: all 0.5s ease-in-out;
 }
 .animation{
-  transform: translate(10vw,-30vw) scale(1.2);
+  transform: translate(7vw,-30vw) scale(1.1);
 }
