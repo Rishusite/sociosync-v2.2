@@ -1,0 +1,452 @@
+
+@media only screen and (max-width: 450px){
+  /*------------------Body--------------------*/
+  body{
+    padding-left: 0;
+  }
+  /*------------------Header------------------*/
+  .search{
+    display: none;
+  }
+  .navbar{
+    flex: 12;
+    .create-button{
+      button{
+        display: none;
+      }
+      #profile-pic{
+        width:11vw;
+        margin-right: 2vw;
+      }
+    }
+    #logo{
+      font-size: 7vw;
+    }
+    
+  }
+  .left-section{
+    flex:1;
+  }
+  .right-section{
+    flex: 1.5;
+    .menu-on-mobile{
+      display: block;
+    }
+  }
+  /*------------------Main--------------------*/
+  .main{
+    margin-top: 2.5vh;
+    display: grid;
+    grid-template-columns: 0.3fr 8fr 0.3fr;
+    column-gap: 1vw;
+    height: 100vh;
+  }
+  /*------------------Story--------------------*/
+  .story{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 3vw;
+    column-gap: 2.2vw;
+  }
+  #i1,#i2,#i3,#i4,#i5{
+    height: 27vw;
+    border-radius: 3vw;
+    box-shadow: 0px 0px 15px 1px rgba(75, 75, 75, 0.806);
+  }
+  #i6{
+    display: none;
+  }
+  /*----------------SearchBox------------------*/
+  .search-box-content{
+    margin-top: 2vh;
+    border-radius: 9vw;
+    margin-left: 2vw;
+    .search-box-place{
+      #search-box-main{
+        font-size: 5vw;
+        padding-left: 4vw;
+      }      
+    }
+    .search-box-post-button{
+      #search-button{
+        font-size: 4vw;
+        margin-top: 0.6vh;
+      }
+    }
+  }
+  /*-------------------Feed-------------------*/
+  .feed-content{
+    border-radius: 6vw;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    margin-left: 2vw;
+    margin-right: 1vw;
+    .feed-profile{
+      padding-left: 3vw;
+      padding-right: 2vw;
+      padding-top: 0.7vh;
+      padding-bottom: 1.5vh;
+      .feed-profile-dp{
+        flex : 2;
+        width: 5vw;
+      }
+      .feed-header-icon{
+        margin-top: 1vw;
+      }
+    }
+    .feed-like{
+      padding: 1.5vh 6vw;
+    }
+    .feed-img{
+      margin-left: 4.6vw;
+      border-radius: 5vw;
+    }
+  }
+  /*------------------Sidebar-----------------*/
+  .side-bar{
+    display: none;
+  }
+  .side-bar-mobile{
+    position: fixed;
+    top: 9vh;
+    right: 3vw;
+    padding: 2vh 3vw;
+    background-color: var(--mobile-sidemenu-bgcolor);
+    border-radius: 4vw;
+    box-shadow: 0px 0px 15px 2px rgb(162, 161, 161);
+  }
+  /*------------------Messages----------------*/
+  .messages{
+    display: none;
+  }
+  .messages-mobile{
+    position: fixed;
+    top: 9vh;
+    bottom: 5vh;
+    right: 5vw;
+    left: 5vw;
+    background-color: var(--whitecolor);
+    border-radius: 5vw;
+    padding: 5vw 5vw;
+    padding-right: 5vw;
+    box-shadow: 0px 0px 15px 2px rgb(163, 162, 162);
+    .close-button{
+      position: fixed;
+      background-color: red;
+      color: white;
+      top: 9.5vh;
+      right: 7vw;
+      border-radius: 50%;
+      padding-left: 0.5vw;
+      padding-right: 0.5vw;
+    }
+    .messages-header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 1vh;
+      .heading{
+        flex: 9;
+        font-weight: bold;
+        font-size: 7vw;
+      }
+      .editicon{
+        flex: 2;
+        padding-left: 2vw;
+        cursor: pointer;
+      }
+    }
+    .message-input{
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      font-size: 5.5vw;
+      padding: 1vw 2vw;
+      border: none;
+      outline: none;
+      background-color: var(--background-theme);
+      border-radius: 50px;
+    }
+  
+    .messages-content{
+      .message{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-top: 2vh;
+        background-color: var(--whitecolor);
+        border-radius: 5vw;
+        .profile-photo{
+          .profile-pic{
+            width: 15vw;
+            margin-right: 4.5vw;
+            border-radius: 50%;
+          }
+        }
+        .name-message{
+          font-size: 4vw;
+          .p1{
+            font-size: 5vw;
+            font-weight: bold;
+            margin-bottom: 0.5vh;
+          }
+          .p2{
+            color: var(--messages-p2);
+          }
+        }
+      }
+    }
+  
+  }
+  /*--------------------------Feed------------------------------*/
+  .feed-like-icos{
+    padding: 1vw 1vw;
+  }
+  /*------------------------Overlays----------------------------*/
+  .overlay-for-dp{
+    .overlay-dp{
+      width: 90vw;
+      height: 55vh;
+      p{
+        font-size: 8vw;
+        padding-left: 18vw;
+        padding-top: 0.5vh;
+        font-weight:300;
+      }
+      img{
+        left: 7vw;
+        top: 6vh;
+        width: 85%;
+      }
+      label{
+        bottom: 1em;
+        left: 5em;
+      }
+    }
+   
+  }
+
+  .overlay-for-messages{
+
+    .overlay-messages{
+      width: 90vw;
+      p{
+        font-size: 7vw;
+      }
+      .cross-button{
+        position: absolute;
+        top: 0.9%;
+        right: 0.7%;
+        background-color: rgba(228, 94, 248, 0.845);
+        border-radius: 50%;
+        padding-top: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 2%;
+        cursor: pointer;
+        color: var(--whitecolor);
+        transition: background-color 0.5s;
+      }
+      .cross-button:hover{
+        background-color: rgba(254, 43, 43, 0.886);
+      }
+      .message-container{
+        form{
+          position: relative;
+          height: 100%;
+          padding: 10% 10%;
+          #to-message{
+            margin-left: 10%;
+            padding: 0.5vw 1vw;
+            font-size: 5vw;
+            margin-bottom: 10%;
+          }
+          #what-message{
+            padding: 0.5vw 1vw;
+            margin-left: 10%;
+            margin-bottom: 25%;
+            font-size: 5vw;
+          }
+          div{
+            padding: 2% 1%;
+            .label{
+              font-size: 6vw;
+            }
+          }
+          button{
+            position: absolute;
+            bottom: 10%;
+            right: 5%;
+            background-color: rgba(228, 94, 248, 0.845);
+            border: none;
+            padding: 2% 5%;
+            border-radius: 1vw;
+            color: white;
+            font-size: 5vw;
+            cursor: pointer;
+            transition: background-color 0.5s;
+          }
+          button:hover{
+            background-color: rgba(254, 43, 43, 0.886);
+          }
+        } 
+      }
+    } 
+  }
+  
+
+  /*--------------------------Story-video-play--------------*/
+  .story-video-playing{
+    left: 5vw;
+    width: 90%;
+    top: 1%;
+    box-shadow: none;
+  }
+  
+}
+
+/*--------------------------Theme Box-----------------------*/
+
+.theme-box{
+  position: absolute;
+  top: 45vh;
+  left: 5vw;
+  border-radius: 1rem;
+  .close-button-theme{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0.7vh;
+    left: 89%;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 1px;
+    cursor: pointer;
+  }
+  .theme-heading{
+    #p11{
+      font-size: 6vw;
+      font-weight: 500; 
+      padding: 1vh 6vw;
+      padding-bottom: 1vh;
+      color: var(--font-color);
+    }
+    #p22{
+      font-size: 3.5vw;
+      color: rgb(151, 151, 151);
+      padding-left: 5vw;
+      padding-right: 3vw;
+      margin-bottom: 3vh;
+    }
+  }
+  .theme-color{
+    p{
+      padding-left: 26vw;
+      font-size: 6vw;
+      color: var(--font-color);
+    }
+    .colors-selection{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--background-theme);
+      border-radius: 3vw;
+      padding: 1vh 1vw;
+      margin: 1vh 1vw;
+      .color{
+        width: 7vw;
+        height: 7vw;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .color-active{
+        width: 5.5vw;
+        height: 5.5vw;
+        box-shadow: 0px 0px 5px 1px rgb(154, 154, 154);
+      }
+      #purple{
+        background-color: purple;
+      }
+      #red{
+        background-color: red;
+        margin-left: 0vw;
+      }
+      #yellow{
+        background-color: yellow;
+        margin-left: 0vw;
+      }
+      #blue{
+        background-color: blue;
+        margin-left: 0vw;
+      }
+      #green{
+        background-color: green;
+        margin-left: 0vw;
+      }
+    }
+  }
+  .theme-dark{
+    #background{
+      padding-left: 20vw;
+      margin-top: 5vh;
+      font-size: 6vw;
+      color: var(--font-color);
+    }
+    .twothemebox{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2vh 4vw;
+      padding-bottom: 3vh;
+      .light{
+        display: inline-block;
+        border: 1px solid black;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        i{
+          padding-top: 0.5rem;
+          color: black;
+          padding-left: 0.3rem;
+        }
+        #light{
+          padding-left: 0.5rem;
+          padding-bottom: 0.5rem;
+          padding-right: 0.3rem;
+          padding-top: 0;
+          margin: 0;
+          font-size: 1.5rem;
+          display: inline-block;
+        }
+      }
+      .dark{
+        display: inline-block;
+        border: 1px solid black;
+        background-color: var(--dark-background-theme);
+        cursor: pointer;
+        i{
+          padding-top: 0.5rem;
+          padding-left: 0.3rem;
+          color: white;
+        }
+        #dark{
+          padding-left: 0.5rem;
+          padding-bottom: 0.5rem;
+          padding-right: 0.3rem;
+          padding-top: 0;
+          margin: 0;
+          font-size: 1.5rem;
+          color: white;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  background-color: var(--whitecolor);
+  transition: all 0.5s ease-in-out;
+}
+.animation{
+  transform: translate(11vw,-25vw) scale(1.3);
+}

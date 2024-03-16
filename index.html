@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SocioSync</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" media="screen and (max-width:450px)" href="stylemobile.css">
+  </head>
+  <body>
+    <!------------------Header----------------------->
+    <div class="header">
+
+      <div class="left-section"></div>
+
+      <div class="navbar">
+        <div class="logo"><p id="logo">SocioSync</p></div>
+        <div class="search">
+          <span class="material-symbols-outlined" >
+            search
+          </span>
+          <input id="searchbox" type="text" placeholder="Search for anything" >
+        </div>
+        <div class="create-button">
+          <button id="create-button">Create</button>
+          <img id="profile-pic" src="profilepics/rishabh.jpeg" onclick="showProfile()">
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="menu-on-mobile" onclick="showMenu()">
+          <span class="material-symbols-outlined" style="font-size: 12vw;
+          padding-top: 1vh;
+          padding-bottom: 1vh;
+          padding-left: 2vw;
+          margin-right: 3vw;
+          cursor: pointer;">
+            menu
+          </span>
+        </div>
+      </div>
+      
+    </div>
+
+<!---------------------------------------Main---------------------------------------->
+    <div class="main">
+      <!-------------------------------Story Video Play----------------------->
+      <div class="video-overlay">
+        
+      </div>
+      <div class="side-left"></div>
+
+      <!--------------------------------Side Bar----------------------------->
+      <div class="side-bar">
+
+        <div class="profile">
+          <div class="profile-pic-sidebar">
+            <img id="profile-pic-id" src="profilepics/rishabh.jpeg" onclick="showProfile()">
+          </div>
+          <div class="profile-descip">
+            <p style="
+              padding-bottom: 6px;
+              font-weight: bold;
+              padding-left: 2px;
+              display: block;
+              ">Rishabh</p>
+            <p id="profile-id"><span>@</span>Ris.hu_007</p>
+          </div>
+        </div>
+
+        <div class="menu">
+          <ul style="
+              list-style-type: none;
+            ">
+
+            <li class="top-list-ele" onclick="alert(`This section is in under processing!`)">
+              <div id="line-on-active">
+              </div>
+              <a href="youtube.com">
+              <span class="material-symbols-outlined" style="font-size: 30px;">
+                Home
+              </span>
+              <p>Home</p>
+            </a></li>
+
+            <li onclick="alert(`This section is in under processing!`)">
+              <div id="line-on-active">
+              </div>
+              <a>
+              <span class="material-symbols-outlined" style="font-size: 30px;">
+              explore
+              </span>
+              <p>Explore</p>
+            </a></li>
+
+            <li onclick="alert(`This section is in under processing!`)">
+              <div id="line-on-active">
+              </div>
+              <a>
+              <span class="material-symbols-outlined" style="font-size: 30px;">
+                notifications
+              </span>
+              <p>Notifications</p>
+            </a></li>
+
+            <li onclick="highlightMessageBox()">
+              <div id="line-on-active">
+              </div>
+              <a>
+              <span class="material-symbols-outlined" style="font-size: 30px;">
+                mail
+              </span>
+              <p>Messages</p>
+            </a></li>
+
+            <li onclick="alert(`This section is in under processing!`)">
+              <div id="line-on-active">
+              </div>
+              <a>
+              <span class="material-symbols-outlined" style="font-size: 30px;">
+                analytics
+              </span>
+              <p>Analytics</p>
+            </a></li>
+
+            <li onclick="showTheme()">
+              <div id="line-on-active">
+              </div>
+              <a>
+              <span class="material-symbols-outlined" style="font-size: 30px;">
+                palette
+              </span>
+              <p>Theme</p><!---------Overlay pop-up at 463-->
+            </a></li>
+
+            <li onclick="alert(`This section is in under processing!`)">
+              <div id="line-on-active">
+              </div>
+              <a>
+              <span class="material-symbols-outlined" style="font-size: 30px;">
+                settings
+              </span>
+              <p>Settings</p>
+            </a></li>
+
+            <li class="last-list-ele" onclick="alert(`This section is in under processing!`)">
+              <div id="line-on-active">
+              </div>
+              <a>
+              <span class="material-symbols-outlined" style="font-size: 30px;">
+                rate_review
+              </span>
+              <p>Feedback</p>
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="create-post-button">
+          <button id="create-post-button">Create Post</button>
+        </div>
+      </div>
+      <!------------------------------Content----------------------------------->
+
+      <div class="content">
+
+        <div class="story">
+          <div class="story-display"><img id="i1" src="story/story-1.jpg" onclick="playVideo(1)"></div>
+          <div class="story-display"><img id="i2" src="story/story-2.jpg" onclick="playVideo(2)"></div>
+          <div class="story-display"><img id="i3" src="story/story-3.jpg" onclick="playVideo(3)"></div>
+          <div class="story-display"><img id="i4" src="story/story-4.jpg" onclick="playVideo(4)"></div>
+          <div class="story-display"><img id="i5" src="story/story-5.jpg" onclick="playVideo(5)"></div>
+          <div class="story-display"><img id="i6" src="story/story-6.jpg" onclick="playVideo(6)"></div>
+        </div>
+
+        <div class="search-box-content">
+          <div class="search-box-content-profile"><img id="search-box-profile" src="profilepics/rishabh.jpeg" onclick="showProfile()"></div>
+          <div class="search-box-place"><input id="search-box-main" type=text placeholder="What's on your mind "></div>
+          <div class="search-box-post-button"><button id="search-button">Post</button></div>
+        </div>
+
+        <div class="feed">
+
+          <div class="feed-content">
+
+            <div class="feed-profile">
+              <img class="feed-profile-dp" src="profilepics/profile-1.jpg" onclick="showProfile()">
+              <p class="name-para">Lana Rose</p>
+              <div class="feed-header-icon">
+                <span class="material-symbols-outlined" style="margin-left: 5px;">
+                  more_horiz
+                </span>
+              </div>
+
+            </div>
+
+            <div class="feed-image"><img class="feed-img" src="feed/feed-1.jpg"></div>
+
+            <div class="feed-like">
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined">
+                  favorite
+                </span>
+              </div>
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined">
+                  comment
+                </span>
+              </div>
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined">
+                  share
+                </span>
+              </div>
+              <div class="space"></div>
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined" style="padding-left: 20px;">
+                  bookmark
+                </span>
+              </div>
+            </div>
+
+            <div class="feed-upload-stats">
+              Dubai,15 minutes ago
+            </div>
+
+          </div>
+
+          <div class="feed-content">
+
+            <div class="feed-profile">
+              <img class="feed-profile-dp" src="profilepics/profile-2.jpg">
+              <p class="name-para">Devil Rocks</p>
+              <div class="feed-header-icon">
+                <span class="material-symbols-outlined" style="margin-left: 5px;">
+                  more_horiz
+                </span>
+              </div>
+
+            </div>
+
+            <div class="feed-image"><img class="feed-img" src="feed/feed-2.jpg"></div>
+
+            <div class="feed-like">
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined">
+                  favorite
+                </span>
+              </div>
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined">
+                  comment
+                </span>
+              </div>
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined">
+                  share
+                </span>
+              </div>
+              <div class="space"></div>
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined" style="padding-left: 20px;">
+                  bookmark
+                </span>
+              </div>
+            </div>
+
+            <div class="feed-upload-stats">
+              England,10 minutes ago
+            </div>
+
+          </div>
+
+          <div class="feed-content">
+
+            <div class="feed-profile">
+              <img class="feed-profile-dp" src="profilepics/profile-3.jpg">
+              <p class="name-para">Rinky Singh</p>
+              <div class="feed-header-icon">
+                <span class="material-symbols-outlined" style="margin-left: 5px;">
+                  more_horiz
+                </span>
+              </div>
+
+            </div>
+
+            <div class="feed-image"><img class="feed-img" src="feed/feed-3.jpg"></div>
+
+            <div class="feed-like">
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined">
+                  favorite
+                </span>
+              </div>
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined">
+                  comment
+                </span>
+              </div>
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined">
+                  share
+                </span>
+              </div>
+              <div class="space"></div>
+              <div class="feed-like-icos">
+                <span class="material-symbols-outlined" style="padding-left: 20px;">
+                  bookmark
+                </span>
+              </div>
+            </div>
+
+            <div class="feed-upload-stats">
+              India,30 minutes ago
+            </div>
+
+          </div>
+          
+          
+        </div>
+
+        
+      </div>
+
+      <!--------------------------Messages--------------------------->
+
+      <div class="side-content">
+
+        <div class="messages">
+          <div class="close-button" onclick="closeMessage()">
+            <span class="material-symbols-outlined" style="font-size: 6vw;">
+              close
+            </span>
+          </div>
+          <div class="messages-header">
+            <div class="heading">Messages</div>
+            <div class="editicon" onclick="showMessages()">
+              <span class="material-symbols-outlined">
+                edit
+              </span>
+            </div>
+          </div>
+          <input class="message-input" placeholder="Search Messages">
+
+          <div class="messages-content">
+
+            <div class="message">
+              <div class="profile-photo">
+                <img class="profile-pic" src="profilepics/profile-19.jpg">
+              </div>
+              <div class="name-message">
+                <p class="p1">Edem Quist</p>
+                <p class="p2">Just Wake Up Bruh</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img class="profile-pic" src="profilepics/profile-18.jpg">
+              </div>
+              <div class="name-message">
+                <p class="p1">Barack Obama</p>
+                <p class="p2">Will eliminate china</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img class="profile-pic" src="profilepics/profile-17.jpg">
+              </div>
+              <div class="name-message">
+                <p class="p1">Naredra Modi</p>
+                <p class="p2">In sajjan ko ka dikkat hai bhai</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img class="profile-pic" src="profilepics/profile-16.jpg">
+              </div>
+              <div class="name-message">
+                <p class="p1">Will Smith</p>
+                <p class="p2">3 new messages</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img class="profile-pic" src="profilepics/profile-15.jpg">
+              </div>
+              <div class="name-message">
+                <p class="p1">Rahul Gandhi</p>
+                <p class="p2">BJP ko hara denge</p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img class="profile-pic" src="profilepics/profile-14.jpg">
+              </div>
+              <div class="name-message">
+                <p class="p1">Salman Bhai</p>
+                <p class="p2">Bata kha chadhani hai gadi</p>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-------------------------------Main End Here----------------------------->
+
+
+    <!-------------------------------OverLays---------------------------------->
+    
+    <div class="overlay-for-dp">
+      <div class="overlay-dp">
+        <p>Display Picture</p>
+        <img src="profilepics/rishabh.jpeg" id="dp-img">
+        <label for="change-dp">Change DP</label>
+        <input type="file" accept="image/jgp, image/png, image/jpeg" id="change-dp">
+        <div onclick="hideProfile()">
+          <span class="material-symbols-outlined">
+          close
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="overlay-for-messages">
+      <div class="overlay-messages">
+        <p>write a message</p>
+        <div class="cross-button" onclick="hideMessages()">
+          <span class="material-symbols-outlined" style="font-size: 2.5vw;">
+          close
+          </span>
+        </div>
+        <div class="message-container">
+          <form>
+            <div>
+              <label for="to-message" class="label">To:</label>
+              <input type="Text" placeholder="Enter ID" id="to-message">
+            </div>
+            <div>
+              <label for="what-message" class="label">Body:</label>
+              <input type="Text-box" placeholder="How are you Today?" id="what-message">
+            </div>
+            <button>Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="overlay-for-theme" >
+      <div class="theme-box">
+        <div class="close-button-theme" onclick="closeTheme()"><i class="material-icons md111">close</i></div>
+        <div class="theme-heading">
+          <p id="p11">Customise Your View</p>
+          <p id="p22">Manange your theme color and background</p>
+        </div>
+        <div class="theme-color">
+          <p>color</p>
+          <div class="colors-selection">
+            <div class="color" id="purple" onclick="activeColor('purple')"></div>
+            <div class="color" id="yellow" onclick="activeColor('yellow')"></div>
+            <div class="color" id="red" onclick="activeColor('red')"></div>
+            <div class="color" id="green" onclick="activeColor('green')"></div>
+            <div class="color" id="blue" onclick="activeColor('blue')"></div>
+          </div>
+        </div>
+        <div class="theme-dark" >
+          <p id="background">Background</p>
+          <div class="twothemebox">
+            <div class="light" onclick="changeTheme(1)">
+              <i class="material-icons md111">circle</i>
+              <p id="light"> Light</p>
+            </div>
+            <div class="dark" onclick="changeTheme(0)">
+              <i class="material-icons md111">circle</i>
+              <p id="dark">Dark</p>
+            </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
